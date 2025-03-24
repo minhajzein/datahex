@@ -5,7 +5,7 @@ import TimePicker from './time-picker/TimePicker'
 import AvailableDieticians from './diaticians/AvailableDieticians'
 import { Link } from 'react-router-dom'
 
-const userTypes = ['New User', 'Existing User']
+const userTypes = ['Existing User', 'New User']
 
 function AddAppoinmentForm() {
 	const [date, setDate] = useState(new Date())
@@ -109,7 +109,10 @@ function AddAppoinmentForm() {
 				</div>
 			</div>
 			<div className='flex justify-end items-center gap-3'>
-				<Link className='border px-4 py-1 text-sm rounded-lg border-gray-400'>
+				<Link
+					to='/'
+					className='border px-4 py-1 text-sm rounded-lg border-gray-400'
+				>
 					Cancel
 				</Link>
 				<button
